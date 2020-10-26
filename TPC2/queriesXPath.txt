@@ -1,0 +1,8 @@
+Identificação dos arqueossítios do concelho de Amares
+    //IDENTI[../contains(CONCEL,'Amares')]
+
+Identificação dos arqueossítios com termo micáceo
+    //IDENTI[..//LIGA/@TERMO='micáceo'] 
+    
+Identificação dos arqueossítios de Barcelos com termo romanização
+    //IDENTI[ ..//LIGA/@TERMO='romanização' and /@CONCEL='Barcelos'] 

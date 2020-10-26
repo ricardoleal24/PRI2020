@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/ricardoleal24/Storage/20-21/PLC/PRI/TPC2/pr.dtd">
+<pr>
+    <pagetitle>Project Record</pagetitle>
+    <header>
+        <keyname>PRI2019-A75411-TPC2</keyname>
+        <title>Especificação de DTD's/Queries XPath</title>
+        <subtitle>TPC2</subtitle>
+        <begindate>19 Outubro 2020</begindate>
+        <enddate>26 Outubro 2020</enddate>
+        <supervisor link="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </header>
+    <workteam>
+        <member link="a75411@alunos.uminho.pt">Ricardo Guerra Leal</member>
+    </workteam>
+    <abstract>
+        <par>Este Project Record foi gerada com recurso a um ficheiro anotado
+            em <b>DTD</b> (<i>Document type definition</i>), onde se define a 
+            estrutura,elementos e atributos de um ficheiro<b>XML</b>.</par>
+        <par>Com recurso ao <b>XPath</b> realizaram-se Queries sobre o ficheiro XML <i>arqueossítios</i>.</par>
+    </abstract>
+    <deliverables>
+        <item link=""></item>
+    </deliverables>
+    <date>25 Outubro 2020</date>
+</pr>
