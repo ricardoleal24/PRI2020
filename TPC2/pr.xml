@@ -23,7 +23,7 @@
     <deliverables>
         <item link="pr.dtd">pr.dtd</item>
         <item link="pr.xml">pr.xml</item>
-        <item link="arq.txt">arq.txt</item>
+        <item link="arq.xml">arq.xml</item>
         <item link="queriesXPath.txt">queriesXPath.txt</item>
     </deliverables>
     <date>25 Outubro 2020</date>
