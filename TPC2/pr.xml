@@ -15,12 +15,16 @@
     </workteam>
     <abstract>
         <par>Este Project Record foi gerada com recurso a um ficheiro anotado
-            em <b>DTD</b> (<i>Document type definition</i>), onde se define a 
-            estrutura,elementos e atributos de um ficheiro<b>XML</b>.</par>
-        <par>Com recurso ao <b>XPath</b> realizaram-se Queries sobre o ficheiro XML <i>arqueossítios</i>.</par>
+             em <b>DTD</b> (<i>Document type definition</i>), onde se define a 
+             estrutura,elementos e atributos de um ficheiro<b>XML</b>.</par>
+        <par>Com recurso ao <b>XPath</b> realizaram-se Queries sobre o ficheiro
+             XML <i>arqueossítios</i>.</par>
     </abstract>
     <deliverables>
-        <item link=""></item>
+        <item link="pr.dtd">pr.dtd</item>
+        <item link="pr.xml">pr.xml</item>
+        <item link="arq.txt">arq.txt</item>
+        <item link="queriesXPath.txt">queriesXPath.txt</item>
     </deliverables>
     <date>25 Outubro 2020</date>
 </pr>
