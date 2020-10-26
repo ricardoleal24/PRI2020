@@ -5,4 +5,4 @@ Identificação dos arqueossítios com termo micáceo
     //IDENTI[..//LIGA/@TERMO='micáceo'] 
     
 Identificação dos arqueossítios de Barcelos com termo romanização
-    //IDENTI[ ..//LIGA/@TERMO='romanização' and /@CONCEL='Barcelos'] 
+    //IDENTI[../contains(CONCEL, 'Barcelos')][//LIGA/@TERMO = 'romanização']
