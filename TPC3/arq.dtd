@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT arqsits (arqelem)+ >
+
+<!ELEMENT arqelem (tipo,identi,imagem?,descri?,lugar?,fregue?,concel?,codadm?,latitu?,longit?,altitu?,acesso?,quadro?,desarq?,interp?,deposi?,(biblio+)?,autor,data) >
+<!ELEMENT tipo (#PCDATA) >
+<!ELEMENT identi (#PCDATA) >
+<!ELEMENT imagem (#PCDATA) >
+<!ATTLIST imagem 
+            href CDATA #REQUIRED>
+<!ELEMENT descri (#PCDATA|liga)* >
+<!ELEMENT liga (#PCDATA) >
+<!ATTLIST liga 
+           termo CDATA #REQUIRED>
+<!ELEMENT lugar (#PCDATA) >
+<!ELEMENT fregue (#PCDATA) >
+<!ELEMENT concel (#PCDATA) >
+<!ELEMENT codadm (#PCDATA) >
+<!ELEMENT latitu (#PCDATA) >
+<!ELEMENT longit (#PCDATA) >
+<!ELEMENT altitu (#PCDATA) >
+<!ELEMENT acesso (#PCDATA) >
+<!ELEMENT quadro (#PCDATA|liga)* >
+<!ELEMENT desarq (#PCDATA|liga)* >
+<!ELEMENT interp (#PCDATA|liga)*>
+<!ELEMENT deposi (#PCDATA) >
+<!ELEMENT biblio (#PCDATA) >
+<!ELEMENT autor (#PCDATA) >
+<!ELEMENT data (#PCDATA) >
+
