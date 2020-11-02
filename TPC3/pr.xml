@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/ricardoleal24/Storage/20-21/PLC/PRI/TPC2/pr.dtd">
+<pr>
+    <pagetitle>Project Record</pagetitle>
+    <header>
+        <keyname>PRI2019-A75411-TPC3</keyname>
+        <title>Stylesheets XSLT</title>
+        <subtitle>TPC3</subtitle>
+        <begindate>26 Outubro 2020</begindate>
+        <enddate>2 Novembro 2020</enddate>
+        <supervisor link="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </header>
+    <workteam>
+        <member link="a75411@alunos.uminho.pt">Ricardo Guerra Leal</member>
+    </workteam>
+    <abstract>
+        <par>Neste trabalho utilizou-se a linguagem <b>XSL</b> <i>(eXtensible Stylesheet Language)</i>
+            para escrever stylesheets de transformação de ficheiros <b>XSL</b>, para ficheiros <b>HTML</b>.</par>
+    </abstract>
+    <deliverables>
+        <item link="arq.dtd">arq.dtd</item>
+        <item link="arq.xsl">arq.xsl</item>
+        <item link="index.html">index.html</item>
+    </deliverables>
+    <date>1 novembro 2020</date>
+</pr>
