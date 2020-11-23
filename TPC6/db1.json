@@ -1,0 +1,58 @@
+{
+  "alunos": [
+    {
+      "id": "A1510",
+      "nome": "ADEMAR FONTES DE MAGALHAES GONCALVES",
+      "curso": "CB8",
+      "git": "g1"
+    },
+    {
+      "id": "A32597",
+      "nome": "ADERITO NELSON MIRANDA DE OLIVEIRA",
+      "curso": "CS19",
+      "git": "g2"
+    },
+    {
+      "id": "A36539",
+      "nome": "ADMILSON CESAR ANDRADE RODRIGUES",
+      "curso": "CS21",
+      "git": "g3"
+    },
+    {
+      "id": "A38165",
+      "nome": "AFONSO DELERUE ARRIAGA",
+      "curso": "CB5",
+      "git": "g4"
+    },
+    {
+      "id": "A38176",
+      "nome": "AGOSTINHO MANUEL ALVES DA SILVA",
+      "curso": "CB5",
+      "git": "g5"
+    },
+    {
+      "id": "A38196",
+      "nome": "ALEXANDRE COELHO CARVALHO",
+      "curso": "CB14",
+      "git": "g1"
+    },
+    {
+      "nome": "aaa",
+      "id": "12",
+      "curso": "c",
+      "git": "dff"
+    },
+    {
+      "nome": "Ze",
+      "id": "A77777",
+      "curso": "LEI",
+      "git": "ddd"
+    },
+    {
+      "nome": "fdfd",
+      "id": "a434",
+      "curso": "dds",
+      "git": "dd"
+    }
+  ]
+}
