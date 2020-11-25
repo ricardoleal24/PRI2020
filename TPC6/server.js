@@ -96,8 +96,8 @@ function geraPagTarefas(tarefas){
                     <td>${tarefa.responsavel}</td>
                     <td>${tarefa.descricao}</td>
                     <td>
-                        <form action="/tarefas/resolver" method="POST"> <button class="w3-button w3-teal" type="submit" name="tarefa" value="${tarefa}">+</button></form>
-                        <button class="w3-button w3-red">x</button>
+                        <form action="/tarefas/resolver" method="POST"> <button class="w3-button w3-teal" type="submit" name="tarefa" value="${[tarefa.id,tarefa.descricao,tarefa.responsavel,tarefa.datalim, 'resol']}">+</button></form>
+                        <form action="/tarefas/cancelar" method="POST"> <button class="w3-button w3-red" type="submit" name="tarefa" value="${[tarefa.id,tarefa.descricao,tarefa.responsavel,tarefa.datalim, 'cancel']}">x</button></form>
                     </td>
                 </tr>
             `
@@ -208,13 +208,45 @@ var gtarefas = http.createServer(function (req, res) {
                 })
             }
             else if(req.url == '/tarefas/resolver'){
-                //
                 recuperaInfo(req, info => {
                     console.log('pedido + POST:' + JSON.stringify(info))
-                    info.estado = "resolvido"
-                    //console.log(info.tarefa)
-                    axios.put('http://localhost:3000/tarefas/'+ info.id, info)
-                        .then(resp => {
+                    //info.estado = "resolvido"
+                    console.log("resolver pedido: tarefa id --------")
+                    console.log(info.tarefa['0']) // button name="tarefa" value={[tarefa.id,tarefa.des...]} 
+                    var tarefa = info.tarefa.split(',');
+                    console.log(tarefa[2])
+                    axios.put('http://localhost:3000/tarefas/'+ tarefa[0], { //info.tarefa[0]
+                        descricao: tarefa[1],
+                        responsavel: tarefa[2],
+                        datalim: tarefa[3],
+                        estado : 'resolvido'
+                    })
+                     .then(resp => {
+                            res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                            res.write('<p><a href="/">Voltar</a></p>')
+                            res.end()
+                        })
+                        .catch(erro => {
+                            res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                            res.write('<p>Erro no POST: ' + erro + '</p>')                            
+                            res.end()
+                    }) 
+                })
+            }
+            else if(req.url == '/tarefas/cancelar'){
+                recuperaInfo(req, info => {
+                    console.log('cancelar pedido pedido + POST:' + JSON.stringify(info))
+                    console.log("tarefa id --------")
+                    console.log(info.tarefa['0']) // button name="tarefa" value={[tarefa.id,tarefa.des...]} 
+                    var tarefa = info.tarefa.split(',');
+                    console.log(tarefa[2])
+                    axios.put('http://localhost:3000/tarefas/'+ tarefa[0], { //info.tarefa[0]
+                        descricao: tarefa[1],
+                        responsavel: tarefa[2],
+                        datalim: tarefa[3],
+                        estado : 'cancelado'
+                    })
+                     .then(resp => {
                             res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
                             res.write('<p><a href="/">Voltar</a></p>')
                             res.end()
@@ -244,3 +276,17 @@ var gtarefas = http.createServer(function (req, res) {
 gtarefas.listen(7778)
 console.log('Servidor à escuta na porta 7778...')
 
+
+//<button class="w3-button w3-red">x</button>
+
+/*
+const axios= require('axios');
+
+axios.put('http://localhost:3000/instrumentos/X1', {
+    "#text": "Kazoo"
+}).then(resp => {
+    console.log(resp.data);
+}).catch(error => {
+    console.log('Erro: ' + error);
+});
+*/
