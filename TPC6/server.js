@@ -66,8 +66,10 @@ function geraPagTarefas(tarefas){
                     <td>${tarefa.responsavel}</td>
                     <td>${tarefa.descricao}</td>
                     <td>
-                        <form action="/tarefas/resolver" method="POST"> <button class="w3-button w3-teal" type="submit" name="tarefa" value="${[tarefa.id,tarefa.descricao,tarefa.responsavel,tarefa.datalim, 'resol']}">+</button></form>
-                        <form action="/tarefas/cancelar" method="POST"> <button class="w3-button w3-red" type="submit" name="tarefa" value="${[tarefa.id,tarefa.descricao,tarefa.responsavel,tarefa.datalim, 'cancel']}">x</button></form>
+                        <form action="/tarefas/resolver" method="POST"> 
+                            <button class="w3-button w3-teal" type="submit" name="tarefa" value="${[tarefa.id,tarefa.descricao,tarefa.responsavel,tarefa.datalim, 'resol']}">+</button></form>
+                        <form action="/tarefas/cancelar" method="POST"> 
+                            <button class="w3-button w3-red" type="submit" name="tarefa" value="${[tarefa.id,tarefa.descricao,tarefa.responsavel,tarefa.datalim, 'cancel']}">x</button></form>
                     </td>
                 </tr>
             `
