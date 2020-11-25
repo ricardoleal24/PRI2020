@@ -4,7 +4,7 @@ var fs = require('fs')
 var static = require('./static.js')
 var {parse} = require('querystring')
 
-// Funções auxilidares
+// Funções auxiliares
 function recuperaInfo(request, callback){
     if(request.headers['content-type'] == 'application/x-www-form-urlencoded'){
         let body = ''
@@ -17,36 +17,6 @@ function recuperaInfo(request, callback){
         })
     }
 }
-
-// POST Confirmation HTML Page Template -------------------------------------
-function geraPostConfirm( aluno, d){
-    return `
-    <html>
-    <head>
-        <title>POST receipt: ${aluno.id}</title>
-        <meta charset="utf-8"/>
-        <link rel="icon" href="favicon.png"/>
-        <link rel="stylesheet" href="w3.css"/>
-    </head>
-    <body>
-        <div class="w3-card-4">
-            <header class="w3-container w3-teal">
-                <h1>Aluno ${aluno.id} inserido</h1>
-            </header>
-
-            <div class="w3-container">
-                <p><a href="/alunos/${aluno.id}">Aceda aqui Ã  sua pÃ¡gina."</a></p>
-            </div>
-
-            <footer class="w3-container w3-teal">
-                <address>Gerado por galuno::PRI2020 em ${d} - [<a href="/">Voltar</a>]</address>
-            </footer>
-        </div>
-    </body>
-    </html>
-    `
-}
-
 
 function geraPagTarefas(tarefas){
     let pagHTML = `
@@ -160,8 +130,8 @@ var gtarefas = http.createServer(function (req, res) {
     var d = new Date().toISOString().substr(0, 16)
     console.log('Novo Pedido :' + req.method + " " + req.url + " " + d)
 
-    // Tratamento do pedido
 
+    // Tratamento do pedido
     if(static.recursoEstatico(req)){
         static.sirvoRecursoEstatico(req,res)
     }
@@ -197,6 +167,7 @@ var gtarefas = http.createServer(function (req, res) {
                     axios.post('http://localhost:3000/tarefas', info)
                         .then(resp => {
                             res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                            res.write('<h2>Tarefa adicionada!</h2></p>')
                             res.write('<p><a href="/">Voltar</a></p>')
                             res.end()
                         })
@@ -224,7 +195,7 @@ var gtarefas = http.createServer(function (req, res) {
                      .then(resp => {
                             
                             res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                            res.write('<h2></h2></p>')
+                            res.write('<h2>Tarefa resolvida!</h2></p>')
                             res.write('<p><a href="/">Voltar</a></p>')
                             res.end()
 
@@ -251,6 +222,7 @@ var gtarefas = http.createServer(function (req, res) {
                     })
                      .then(resp => {
                             res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                            res.write('<h2>Tarefa cancelada!</h2></p>')
                             res.write('<p><a href="/">Voltar</a></p>')
                             res.end()
                         })
@@ -272,24 +244,9 @@ var gtarefas = http.createServer(function (req, res) {
             res.write("<p>" + req.method + " não suportado neste serviço.</p>")
             res.end();
     }
-}
+  }
 })
 
 
 gtarefas.listen(7778)
 console.log('Servidor à escuta na porta 7778...')
-
-
-//<button class="w3-button w3-red">x</button>
-
-/*
-const axios= require('axios');
-
-axios.put('http://localhost:3000/instrumentos/X1', {
-    "#text": "Kazoo"
-}).then(resp => {
-    console.log(resp.data);
-}).catch(error => {
-    console.log('Erro: ' + error);
-});
-*/
