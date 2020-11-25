@@ -70,7 +70,7 @@ function geraPagTarefas(tarefas){
                     <input class="w3-input w3-border w3-light-grey" type="text" name="responsavel">
 
                     <label class="w3-text-teal"><b>Data Limite</b></label>
-                    <input class="w3-input w3-border w3-light-grey" type="text" name="datalim">
+                    <input type="date" class="w3-input w3-border w3-light-grey" type="text" name="datalim" id="datemin" name="datemin" min="2020-01-01">
                     
                     <input class="w3-btn w3-blue-grey" type="submit" value="Registar"/>
                     <input class="w3-btn w3-blue-grey" type="reset" value="Limpar valores"/> 
