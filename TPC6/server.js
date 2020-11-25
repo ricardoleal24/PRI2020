@@ -222,9 +222,12 @@ var gtarefas = http.createServer(function (req, res) {
                         estado : 'resolvido'
                     })
                      .then(resp => {
+                            
                             res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
+                            res.write('<h2></h2></p>')
                             res.write('<p><a href="/">Voltar</a></p>')
                             res.end()
+
                         })
                         .catch(erro => {
                             res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
