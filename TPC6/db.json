@@ -3,36 +3,36 @@
     {
       "descricao": "Resolver pedidos put TPC PRI",
       "responsavel": "Ricardo leal",
-      "datalim": "2020/11/11",
-      "estado": "cancelado",
+      "datalim": "2020/11/23",
+      "estado": "pendente",
       "id": 1
     },
     {
       "descricao": "Resolver pedidos get",
       "responsavel": "Ricardo leal",
-      "datalim": "2021/03/04",
-      "estado": "resolvido",
+      "datalim": "2020/11/23",
+      "estado": "pendente",
       "id": 2
     },
     {
       "descricao": "Correr",
       "responsavel": "Manuel",
       "datalim": "2020/12/25",
-      "estado": "cancelado",
+      "estado": "pendente",
       "id": 3
     },
     {
       "descricao": "comer bacalhou",
       "responsavel": "Toda a gente",
       "datalim": "2020/12/25",
-      "estado": "pendente",
+      "estado": "cancelado",
       "id": 4
     },
     {
       "descricao": "Jogar á bola",
       "responsavel": "Cristiano Ronaldp",
       "datalim": "2002-02-11",
-      "estado": "pendente",
+      "estado": "resolvido",
       "id": 5
     },
     {
@@ -43,8 +43,8 @@
       "id": 6
     },
     {
-      "descricao": "",
-      "responsavel": "",
+      "descricao": "nada",
+      "responsavel": "ninguem,",
       "datalim": "3131-12-31",
       "estado": "pendente",
       "id": 7
