@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/ricardoleal24/Documents/PRI/Aulas/aula4/pr_oficial.dtd">
+<pr>
+    <meta>
+        <keyname>PRI2020-A75411-TPC7</keyname>
+        <title>Servidor NodeJS, base de dados mongodDB</title>
+        <bdate>23/11/2020</bdate>
+        <edate>30/11/2020</edate>
+        <supervisor>href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <member num="A75411">
+            <name>Ricardo Leal</name>
+            <email>a75411@alunos.uminho.pt</email>
+        </member>
+    </workteam>
+    <abstract>
+        <p>Desenvolvimento de uma aplicação web <b>NodeJS</b> com conexão a uma base de dados <b>mongodDB</b> para gerir os alunos da turma e suas notas nos TPCs.</p>
+    </abstract>
+    <deliverables>
+        <deliverable>
+            <link url="https://github.com/ricardoleal24/PRI2020/tree/main/TPC6">Ficheiros do TP5</link>
+        </deliverable>
+    </deliverables>
+</pr>
