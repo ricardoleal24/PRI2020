@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  h1= title
+  p Página inicial
+  a(href='/addListaCompras') Adicionar lista de compras
+
+  if dados.length > 0
+    .w3-container.w3-padding
+      table.w3-table-all.w3-card-4.w3-hoverable(id='myTable')
+        tr.w3-orange
+          th Id
+          th Team
+          th pitch 1
+          th pitch 2
+          th techPitch
+          th Business Report
+          th tech Report
+          th nmembers
+        each team in dados
+          
+          tr
+            td= team._id
+            td  
+              a(href='/team/'+team._id)=team.team
+
+            td= team.pitch1
+            td= team.techPitch
+            td= team.pitch2
+            td= team.businessReport
+            td= team.techReport
+            th= team.nmembers
+
+  else
+    .w3-container
+      p There are no compras...
