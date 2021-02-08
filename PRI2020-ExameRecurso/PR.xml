@@ -20,35 +20,10 @@
         <paragrafo> Pergunta 1 </paragrafo>
         <paragrafo> mongoimport -d PEI2020 -c teams --jsonArray PEI-teams.json </paragrafo>
     
-        2
-            1 db.teams.count()
-            
-            2 db.teams.distinct("team").sort()
-            
-            3?
-            
-            4 
-    
-            
 
-        <paragrafo>Pergunta 2.1.2</paragrafo>
-        <paragrafo>GET http://clav-api.di.uminho.pt/v2/classes?nivel=4&token=</paragrafo>
-        <paragrafo>pm.test("test 1", function() {console.log(pm.response.json().length)})</paragrafo>
-        <paragrafo>resposta: 116</paragrafo>
-        
-        <paragrafo>Pergunta 2.1.3</paragrafo>
-        <paragrafo>GET http://clav-api.di.uminho.pt/v2/classes/c750.30/descendencia?token=</paragrafo>
-        <paragrafo>pm.test("test 1", function() {console.log(pm.response.json().length)})</paragrafo>
-        <paragrafo>resposta: 5</paragrafo>
-
-        <paragrafo>Pergunta 2.1.4</paragrafo>
-        <paragrafo>GET http://clav-api.di.uminho.pt/v2/classes?nivel=4&token=</paragrafo>
-        <paragrafo>pm.test("test 1", function() {console.log(pm.response.json().length)})</paragrafo>
-        <paragrafo>resposta: 6</paragrafo>
-
-
-        <paragrafo>Pergunta 2.2</paragrafo>
-        <paragrafo>Correr servidor com o npm e abrir em http://localhost:8002/</paragrafo>
+        <paragrafo>  1 db.teams.count() <paragrafo>     
+        <paragrafo>  db.teams.distinct("team").sort() <paragrafo> 
+            
 
     </abstract>
 </pr>
